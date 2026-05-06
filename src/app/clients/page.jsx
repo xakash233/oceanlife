@@ -43,16 +43,16 @@ const OngoingLogos = [
   "/clients/on7.webp", // Noida International Airport
   "/clients/on11.webp", // Ford
   "/clients/on12.webp", // Web Werks
-  "/clients/workday.png",
-  "/clients/all_digi_tech.png",
+  "/logo/workday.jpeg",
+  "/logo/alldigi.svg",
   "/clients/sifi.png",
-  "/clients/accenture.png",
-  "/clients/rsp.png",
-  "/clients/namtech.png",
-  "/clients/iiit_hyderabad.png",
+  "/logo/accenture.jpeg",
+  "/logo/rsp.jpeg",
+  "/logo/nametech.jpeg",
+  "/logo/IIT HYDERABAD.jpeg",
   "/clients/st_telemedia.png",
-  "/clients/iron_mountain.png",
-  "/clients/city_union_bank.png",
+  "/logo/IRON MOUNTAIN.jpeg",
+  "/logo/CITY UNION BANK.jpeg",
 ];
 
 export const metadata = {
