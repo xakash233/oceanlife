@@ -1,0 +1,24 @@
+#!/usr/bin/expect
+
+set password "Ocean#3rVe&2507@ccEsS"
+set host "195.35.21.48"
+set user "root"
+
+spawn ssh -o StrictHostKeyChecking=no $user@$host
+expect "password:"
+send "$password\r"
+expect "#"
+send "kill -9 46843\r"
+expect "#"
+send "fuser -k 3000/tcp\r"
+expect "#"
+send "pm2 delete all\r"
+expect "#"
+send "cd /home/oceanweb/htdocs/www.olipl.com\r"
+expect "#"
+send "pm2 start npm --name \"oceanlife\" -- start\r"
+expect "online"
+send "pm2 save\r"
+expect "#"
+send "exit\r"
+expect eof

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "image": "/about/team1.webp",
+    "title": "Mr. S. K. Peter",
+    "description": "Managing Director & CEO"
+  },
+  {
+    "id": 2,
+    "image": "/about/team4.webp",
+    "title": "Mrs. Anitha Peter",
+    "description": "Director I Operations"
+  },
+  {
+    "id": 3,
+    "image": "/about/sankar.webp",
+    "title": "Mr. Sankar Kaliaperumal",
+    "description": "Director I Global"
+  },
+  {
+    "id": 4,
+    "image": "/about/Sarat.jpg",
+    "title": "Mr. Sarat Kadambi",
+    "description": "Chief Operating Officer"
+  },
+  {
+    "id": 5,
+    "image": "/about/durai.png",
+    "title": "Mr. Durai Raj L",
+    "description": "Chief Financial Officer"
+  },
+  {
+    "id": 6,
+    "image": "/about/Arul1.jpg",
+    "title": "Mr. Arul Arumugam",
+    "description": "Senior Director"
+  },
+  {
+    "id": 7,
+    "image": "/about/vinod.webp",
+    "title": "Mr. Vinod Vishwanath",
+    "description": "Senior Director I Marine"
+  },
+  {
+    "id": 8,
+    "image": "/about/balu.jpg",
+    "title": "Mr. Balu K",
+    "description": "Director - Civil"
+  },
+  {
+    "id": 9,
+    "image": "/about/prabhu.jpg",
+    "title": "Mr. Prabhu P",
+    "description": "Head - EHS"
+  }
+]

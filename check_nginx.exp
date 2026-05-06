@@ -1,0 +1,16 @@
+#!/usr/bin/expect
+
+set password "Ocean#3rVe&2507@ccEsS"
+set host "195.35.21.48"
+set user "root"
+
+spawn ssh -o StrictHostKeyChecking=no $user@$host
+expect "password:"
+send "$password\r"
+expect "#"
+send "ls /etc/nginx/sites-enabled/\r"
+expect "#"
+send "cat /etc/nginx/sites-enabled/olipl.com\r"
+expect "#"
+send "exit\r"
+expect eof

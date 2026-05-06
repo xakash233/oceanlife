@@ -1,0 +1,8 @@
+#!/usr/bin/expect -f
+set timeout -1
+spawn scp -r -P 22 root@195.35.21.48:/home/oceanweb/htdocs/www.olipl.com .
+expect {
+    "yes/no" { send "yes\n"; exp_continue }
+    "password:" { send "Ocean#3rVe&2507@ccEsS\n" }
+}
+expect eof

@@ -1,0 +1,26 @@
+#!/usr/bin/expect
+
+set password "Ocean#3rVe&2507@ccEsS"
+set host "195.35.21.48"
+set user "root"
+
+spawn ssh -o StrictHostKeyChecking=no $user@$host
+expect "password:"
+send "$password\r"
+expect "#"
+send "cd /home/oceanweb/htdocs/www.olipl.com\r"
+expect "#"
+send "rm -rf .next && npm run build\r"
+set timeout 300
+expect {
+    "Route (app)" { exp_continue }
+    "Exit code: 0" { exp_continue }
+    "#" { 
+        send "pm2 restart oceanlife || pm2 start npm --name \"oceanlife\" -- start\r"
+        expect "#"
+        send "pm2 save\r"
+        expect "#"
+        send "exit\r"
+    }
+}
+expect eof

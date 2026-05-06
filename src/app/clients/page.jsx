@@ -1,0 +1,98 @@
+import Image from "next/image";
+import styles from "./clients.module.css";
+
+const Logos = [
+  "/clients/1.webp",
+  "/clients/2.webp",
+  "/clients/3.webp",
+  "/clients/4.webp",
+  "/clients/5.webp",
+  "/clients/6.webp",
+  "/clients/7.webp",
+  "/clients/8.webp",
+  "/clients/9.webp",
+  "/clients/10.webp",
+  "/clients/11.webp",
+  "/clients/12.webp",
+  "/clients/13.webp",
+  "/clients/14.webp",
+  "/clients/15.webp",
+  "/clients/16.webp",
+  "/clients/17.webp",
+  "/clients/18.webp",
+  "/clients/19.webp",
+  "/clients/20.webp",
+  "/clients/21.webp",
+  "/clients/22.webp",
+  "/clients/23.webp",
+  "/clients/24.webp",
+  "/clients/25.webp",
+  "/clients/26.webp",
+  "/clients/27.webp",
+  "/clients/28.webp",
+  "/clients/29.webp",
+  "/clients/30.webp",
+  "/clients/31.webp",
+  "/clients/32.webp",
+  "/clients/33.webp",
+  "/clients/34.webp",
+  "/clients/35.webp",
+];
+const OngoingLogos = [
+  "/clients/on5.webp", // DP WORLD
+  "/clients/on7.webp", // Noida International Airport
+  "/clients/on11.webp", // Ford
+  "/clients/on12.webp", // Web Werks
+  "/clients/workday.png",
+  "/clients/all_digi_tech.png",
+  "/clients/sifi.png",
+  "/clients/accenture.png",
+  "/clients/rsp.png",
+  "/clients/namtech.png",
+  "/clients/iiit_hyderabad.png",
+  "/clients/st_telemedia.png",
+  "/clients/iron_mountain.png",
+  "/clients/city_union_bank.png",
+];
+
+export const metadata = {
+  title: "Clients | Ocean Lifespaces India Pvt Ltd",
+  description:
+    "See who trusts us! Discover the clients behind Ocean Lifespaces India Pvt Ltd's success in construction and infrastructure delivery.",
+  keywords: "Ocean Lifespaces India Pvt Ltd",
+  alternates: {
+    canonical: "https://www.olipl.com/clients",
+  },
+};
+
+function Clients() {
+  return (
+    <section className={styles.clients}>
+      <div className="container">
+        <div className={styles.rowMainClients}>
+          <h1 className="h1">Our Clients</h1>
+          <h2 className="h2">Fitout Corporate Clients</h2>
+          <div className={styles.rowClients}>
+            {Logos.map((logo) => (
+              <div key={logo} className={styles.columnClients}>
+                <Image width={184} height={104} src={logo} alt="image" />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className={styles.rowMainClients} style={{ marginTop: "50px" }}>
+          <h2 className="h2">Ongoing Projects</h2>
+          <div className={`${styles.rowClients} ${styles.rowClientsOngoing}`}>
+            {OngoingLogos.map((logo) => (
+              <div key={logo} className={styles.columnClients}>
+                <Image width={184} height={84} src={logo} alt="image" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Clients;

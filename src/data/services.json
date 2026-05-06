@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Turnkey Solutions",
+    "imgSrc": "/interior.webp",
+    "link": "/services/turnkey-solutions"
+  },
+  {
+    "id": 2,
+    "title": "Interior Fit-Out Services",
+    "imgSrc": "/fitOuts.webp",
+    "link": "/services/interior-fit-out-services"
+  },
+  {
+    "id": 3,
+    "title": "Civil Construction",
+    "imgSrc": "/civil.webp",
+    "link": "/services/civil-construction"
+  },
+  {
+    "id": 4,
+    "title": "Real Estate Development",
+    "imgSrc": "/designBuild.webp",
+    "link": "/services/real-estate-development"
+  },
+  {
+    "id": 5,
+    "title": "Infrastructure Development",
+    "imgSrc": "/marine.webp",
+    "link": "/services/infrastructure-development"
+  },
+  {
+    "id": 6,
+    "title": "Data Centre Project Expertise",
+    "imgSrc": "/interior/home-interior.webp",
+    "link": "/services/data-centre-project-expertise"
+  },
+  {
+    "id": 7,
+    "title": "Hospitals and Hospitality",
+    "imgSrc": "/services/hotelgreysuit.webp",
+    "link": "/services/hospitals-and-hospitality"
+  }
+]

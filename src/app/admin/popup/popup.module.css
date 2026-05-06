@@ -1,0 +1,131 @@
+.container {
+  max-width: 800px;
+}
+
+.title {
+  font-size: 28px;
+  color: #00376a;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.statusRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.toggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnActive {
+  background-color: #f5831f;
+  color: #fff;
+}
+
+.btnInactive {
+  background-color: #eee;
+  color: #666;
+}
+
+.imagePreview {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.previewBox {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  background-color: #f8f9fa;
+  border: 2px dashed #ddd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.placeholder {
+  color: #999;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.uploadLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background-color: #00376a;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.uploadLabel:hover {
+  background-color: #002a50;
+}
+
+.deleteBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #ff4d4f;
+  border: 1px solid #ff4d4f;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.deleteBtn:hover:not(:disabled) {
+  background-color: #ff4d4f;
+  color: #fff;
+}
+
+.deleteBtn:disabled {
+  border-color: #ddd;
+  color: #ccc;
+  cursor: not-allowed;
+}
